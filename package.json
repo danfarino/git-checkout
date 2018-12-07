@@ -1,0 +1,50 @@
+{
+    "name": "git-checkout",
+    "displayName": "git-checkout",
+    "description": "Check out files from another Git commit",
+    "version": "1.0.0",
+    "publisher": "danfarino",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danfarino/git-checkout.git"
+    },
+    "homepage": "https://github.com/danfarino/git-checkout/blob/master/README.md",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.gitCheckout"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.gitCheckout",
+                "title": "Git checkout from other commit",
+                "when": "isWindows"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.gitCheckout",
+                    "when": "isWindows"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.25",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
