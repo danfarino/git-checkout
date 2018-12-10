@@ -4,6 +4,7 @@
     "description": "Check out files from another Git commit",
     "version": "1.0.1",
     "publisher": "danfarino",
+    "icon": "logo.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/danfarino/git-checkout.git"
