@@ -2,7 +2,7 @@
     "name": "git-checkout",
     "displayName": "git-checkout",
     "description": "Check out files from another Git commit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "danfarino",
     "repository": {
         "type": "git",
